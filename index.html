@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sister Wealth Creators | Build a Business That Supports Your Next Chapter</title>
+<meta name="description" content="Sister Wealth Creators helps women create income-producing businesses with practical strategy, smart systems, and ongoing support. Built around your life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#C97B84;--rose-lt:#F2DDE0;--rose-dk:#8B4E56;--rose-deep:#5C2D33;
+  --sage:#7D9E8C;--sage-lt:#D8EBE2;--sage-dk:#3D6B56;
+  --gold:#C9A96E;--gold-lt:#F5ECD9;--gold-dk:#8B6B30;
+  --cream:#FAF7F2;--warm:#F0EBE3;--warm2:#E8E0D5;
+  --text:#2C2420;--text2:#4A3C38;--muted:#7A6E6A;
+  --border:rgba(150,110,100,.13);--shadow:0 4px 32px rgba(44,36,32,.07)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.6}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 70% 50% at 5% 15%,rgba(201,123,132,.07) 0%,transparent 60%),
+  radial-gradient(ellipse 50% 70% at 95% 85%,rgba(125,158,140,.07) 0%,transparent 60%),
+  radial-gradient(ellipse 40% 40% at 50% 50%,rgba(201,169,110,.04) 0%,transparent 70%)}
+.petal{position:fixed;border-radius:50% 0 50% 0;pointer-events:none;z-index:0;opacity:.055}
+.p1{width:400px;height:400px;background:var(--rose);top:-120px;right:-100px;transform:rotate(25deg)}
+.p2{width:280px;height:280px;background:var(--sage);bottom:5%;left:-80px;transform:rotate(-18deg)}
+.p3{width:200px;height:200px;background:var(--gold);top:45%;right:-50px;transform:rotate(40deg)}
+
+/* LAYOUT */
+.wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:0 28px}
+.wrap-narrow{max-width:640px;margin:0 auto;padding:0 28px}
+section{padding:80px 0;position:relative;z-index:1}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(250,247,242,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
+  padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.navbar-brand{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;
+  letter-spacing:.04em;color:var(--text);text-decoration:none;white-space:nowrap}
+.navbar-brand span{color:var(--rose)}
+.navbar-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.nav-btn{font-size:12px;font-weight:500;letter-spacing:.05em;padding:8px 18px;
+  border-radius:50px;text-decoration:none;transition:all .2s;white-space:nowrap}
+.nav-btn.outline{border:1px solid var(--border);color:var(--muted);background:transparent}
+.nav-btn.outline:hover{border-color:var(--rose);color:var(--rose)}
+.nav-btn.fill{background:var(--rose);color:white;border:none}
+.nav-btn.fill:hover{background:var(--rose-dk);transform:translateY(-1px)}
+@media(max-width:560px){.navbar-links .nav-btn.outline{display:none}}
+
+/* TYPOGRAPHY */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:20px}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:32px;height:1px;background:var(--rose);opacity:.5}
+.eyebrow.center{justify-content:center}
+.eyebrow.sage{color:var(--sage)}
+.eyebrow.sage::before,.eyebrow.sage::after{background:var(--sage)}
+.eyebrow.gold{color:var(--gold-dk)}
+.eyebrow.gold::before,.eyebrow.gold::after{background:var(--gold)}
+
+h1,h2,h3{font-family:'Cormorant Garamond',serif}
+.display{font-size:clamp(42px,6.5vw,76px);font-weight:300;line-height:1.08;color:var(--text)}
+.display em{color:var(--rose);font-style:italic}
+.display strong{font-weight:500}
+.title{font-size:clamp(28px,4vw,46px);font-weight:400;color:var(--text);line-height:1.2}
+.title em{color:var(--rose);font-style:italic}
+.intro{font-size:16px;font-weight:300;color:var(--muted);line-height:1.85;max-width:560px}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:'Jost',sans-serif;font-weight:500;
+  letter-spacing:.06em;border-radius:50px;text-decoration:none;cursor:pointer;
+  transition:all .25s;border:none;text-align:center}
+.btn-rose{background:linear-gradient(135deg,var(--rose),var(--rose-dk));color:white;
+  padding:15px 38px;font-size:14px;box-shadow:0 6px 24px rgba(201,123,132,.3)}
+.btn-rose:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(201,123,132,.4)}
+.btn-rose.lg{padding:18px 48px;font-size:15px}
+.btn-sage{background:linear-gradient(135deg,var(--sage),var(--sage-dk));color:white;
+  padding:15px 38px;font-size:14px;box-shadow:0 6px 24px rgba(125,158,140,.25)}
+.btn-sage:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(125,158,140,.35)}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--muted);
+  padding:13px 32px;font-size:13px}
+.btn-outline:hover{border-color:var(--rose);color:var(--rose)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dk));color:white;
+  padding:15px 38px;font-size:14px;box-shadow:0 6px 24px rgba(201,169,110,.3)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(201,169,110,.4)}
+.btn-white{background:white;color:var(--rose-dk);padding:15px 38px;font-size:14px}
+.btn-white:hover{background:var(--gold-lt);transform:translateY(-2px)}
+
+/* HERO */
+.hero{padding:88px 0 72px;text-align:center}
+.hero-badges{display:flex;align-items:center;justify-content:center;gap:10px;
+  flex-wrap:wrap;margin-top:28px}
+.hero-badge{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.hero-badge::before{content:'✓';color:var(--sage);font-weight:600}
+.hero-img{width:100%;max-width:680px;border-radius:24px;margin:40px auto 0;
+  display:block;box-shadow:0 8px 48px rgba(44,36,32,.12);object-fit:cover;height:340px}
+
+/* RETIREMENT SECTION */
+.ret-block{background:white;border:1px solid var(--border);border-radius:24px;
+  padding:40px 44px;margin-top:48px}
+.ret-block p{font-size:15px;font-weight:300;color:var(--muted);line-height:1.9;margin-bottom:16px}
+.ret-block p:last-child{margin-bottom:0}
+.ret-block p strong{color:var(--text);font-weight:500}
+.ret-block p em{color:var(--rose);font-style:italic}
+@media(max-width:560px){.ret-block{padding:28px 24px}}
+
+/* HOW IT WORKS - JOURNEY */
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  margin-top:48px;position:relative}
+.journey::before{content:'';position:absolute;top:28px;left:10%;right:10%;
+  height:1px;background:linear-gradient(90deg,var(--rose-lt),var(--gold-lt),var(--sage-lt));
+  z-index:0}
+@media(max-width:600px){.journey{grid-template-columns:1fr 1fr;gap:24px}
+  .journey::before{display:none}}
+@media(max-width:380px){.journey{grid-template-columns:1fr}}
+.journey-step{text-align:center;padding:0 12px;position:relative;z-index:1}
+.journey-circle{width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 16px;font-size:20px;
+  box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.journey-step:nth-child(1) .journey-circle{background:linear-gradient(135deg,var(--rose-lt),#fff);border:1px solid rgba(201,123,132,.3)}
+.journey-step:nth-child(2) .journey-circle{background:linear-gradient(135deg,var(--gold-lt),#fff);border:1px solid rgba(201,169,110,.3)}
+.journey-step:nth-child(3) .journey-circle{background:linear-gradient(135deg,var(--sage-lt),#fff);border:1px solid rgba(125,158,140,.3)}
+.journey-step:nth-child(4) .journey-circle{background:linear-gradient(135deg,#F0EBE3,#fff);border:1px solid var(--border)}
+.journey-label{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;
+  color:var(--text);margin-bottom:6px}
+.journey-desc{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
+.journey-arrow{position:absolute;top:22px;right:-8px;color:var(--rose-lt);font-size:18px;z-index:2}
+@media(max-width:600px){.journey-arrow{display:none}}
+
+/* MAIN OFFER */
+.offer-card{background:white;border:1px solid var(--border);border-radius:28px;
+  overflow:hidden;box-shadow:var(--shadow);margin-top:48px}
+.offer-header{background:linear-gradient(135deg,var(--rose-deep) 0%,#7A3540 100%);
+  padding:36px 40px;position:relative;overflow:hidden}
+.offer-header::before{content:'';position:absolute;top:-60px;right:-60px;
+  width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.05)}
+.offer-header .offer-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);font-weight:500;margin-bottom:10px}
+.offer-header h2{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;
+  color:white;margin-bottom:8px;line-height:1.2;position:relative;z-index:1}
+.offer-header h2 em{font-style:italic;color:var(--gold)}
+.offer-header p{font-size:14px;color:rgba(255,255,255,.7);font-weight:300;
+  line-height:1.7;max-width:480px;position:relative;z-index:1}
+.offer-price-tag{position:absolute;top:36px;right:40px;text-align:right;z-index:1}
+.offer-price-tag .amount{font-family:'Cormorant Garamond',serif;font-size:48px;
+  font-weight:500;color:white;line-height:1}
+.offer-price-tag .period{font-size:12px;color:rgba(255,255,255,.5);font-weight:300}
+@media(max-width:580px){.offer-price-tag{position:static;margin-top:20px;text-align:left}
+  .offer-price-tag .amount{font-size:40px}}
+.offer-body{padding:36px 40px}
+@media(max-width:560px){.offer-header,.offer-body{padding:28px 24px}}
+
+/* INCLUDES GRID */
+.includes-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
+@media(max-width:540px){.includes-grid{grid-template-columns:1fr}}
+.inc-item{display:flex;gap:12px;align-items:flex-start;
+  background:var(--warm);border-radius:12px;padding:14px 16px}
+.inc-dot{width:8px;height:8px;border-radius:50%;background:var(--rose);
+  flex-shrink:0;margin-top:5px}
+.inc-text{font-size:13px;color:var(--text2);line-height:1.5;font-weight:300}
+.inc-text strong{color:var(--text);font-weight:500;display:block;margin-bottom:2px}
+
+/* PAYMENT PLAN */
+.payment-plan{background:var(--gold-lt);border:1px solid rgba(201,169,110,.3);
+  border-radius:14px;padding:16px 20px;margin:20px 0;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.payment-plan-icon{font-size:22px;flex-shrink:0}
+.payment-plan-text{font-size:13px;color:var(--gold-dk);line-height:1.6}
+.payment-plan-text strong{font-weight:600;display:block;margin-bottom:2px}
+
+/* DREAM LIFE CALCULATOR */
+.calc-wrap{background:white;border:1px solid var(--border);border-radius:28px;
+  overflow:hidden;box-shadow:var(--shadow);margin-top:48px}
+.calc-header{background:linear-gradient(135deg,var(--sage-dk) 0%,#2D5445 100%);
+  padding:32px 40px;position:relative;overflow:hidden}
+.calc-header::before{content:'';position:absolute;top:-40px;right:-40px;
+  width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.05)}
+.calc-header .calc-eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);font-weight:500;margin-bottom:8px}
+.calc-header h2{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;
+  color:white;line-height:1.2;margin-bottom:6px;position:relative;z-index:1}
+.calc-header h2 em{font-style:italic;color:rgba(201,169,110,.9)}
+.calc-header p{font-size:13px;color:rgba(255,255,255,.65);font-weight:300;
+  line-height:1.7;position:relative;z-index:1}
+.calc-body{padding:36px 40px}
+@media(max-width:560px){.calc-header,.calc-body{padding:24px 20px}}
+
+.calc-inputs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+@media(max-width:520px){.calc-inputs{grid-template-columns:1fr}}
+.calc-field label{display:block;font-size:12px;font-weight:500;letter-spacing:.05em;
+  color:var(--text);margin-bottom:6px}
+.calc-field .calc-hint{font-size:11px;color:var(--muted);margin-bottom:8px;font-weight:300;line-height:1.4}
+.calc-field input{width:100%;padding:11px 14px 11px 28px;border:1px solid var(--border);
+  border-radius:10px;background:var(--warm);font-family:'Jost',sans-serif;
+  font-size:14px;color:var(--text);outline:none;transition:border .2s}
+.calc-field input:focus{border-color:var(--sage);background:white;
+  box-shadow:0 0 0 3px rgba(125,158,140,.1)}
+.calc-field .input-wrap{position:relative}
+.calc-field .input-wrap::before{content:'$';position:absolute;left:10px;top:50%;
+  transform:translateY(-50%);font-size:13px;color:var(--muted);pointer-events:none}
+
+.calc-btn{width:100%;padding:14px;border:none;border-radius:12px;
+  background:linear-gradient(135deg,var(--sage),var(--sage-dk));color:white;
+  font-family:'Jost',sans-serif;font-size:14px;font-weight:500;cursor:pointer;
+  transition:all .2s;letter-spacing:.04em}
+.calc-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(125,158,140,.3)}
+
+.calc-result{display:none;margin-top:28px;animation:fadeUp .3s ease}
+.calc-result.visible{display:block}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+@media(max-width:440px){.result-grid{grid-template-columns:1fr}}
+.result-card{border-radius:16px;padding:20px;text-align:center;border:1px solid}
+.result-card.day{background:var(--rose-lt);border-color:rgba(201,123,132,.2)}
+.result-card.month{background:linear-gradient(135deg,var(--rose-lt),var(--gold-lt));
+  border-color:rgba(201,123,132,.3);transform:scale(1.02)}
+.result-card.year{background:var(--sage-lt);border-color:rgba(125,158,140,.2)}
+.result-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;margin-bottom:6px}
+.result-amount{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;
+  color:var(--text);line-height:1}
+.result-card.month .result-amount{font-size:38px;color:var(--rose-dk)}
+.result-note{font-size:11px;color:var(--muted);margin-top:4px}
+.calc-message{background:var(--warm);border-radius:14px;padding:20px 24px;
+  font-size:13px;color:var(--text2);line-height:1.7;font-weight:300;text-align:center}
+.calc-message strong{color:var(--text);font-weight:500;display:block;margin-bottom:6px}
+
+/* MONTHLY STREAMS */
+.streams-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+@media(max-width:660px){.streams-grid{grid-template-columns:1fr}}
+.stream-card{background:white;border:1px solid var(--border);border-radius:22px;
+  padding:28px;position:relative;transition:box-shadow .2s;overflow:hidden}
+.stream-card:hover{box-shadow:0 8px 40px rgba(0,0,0,.08)}
+.stream-card.featured{border-color:var(--rose);box-shadow:0 4px 24px rgba(201,123,132,.15)}
+.stream-popular{position:absolute;top:16px;right:16px;
+  background:var(--rose);color:white;font-size:10px;font-weight:600;
+  letter-spacing:.08em;padding:3px 10px;border-radius:10px}
+.stream-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;
+  color:var(--text);margin-bottom:4px}
+.stream-price{font-size:26px;font-weight:600;color:var(--rose-dk);margin-bottom:4px}
+.stream-price span{font-size:13px;font-weight:300;color:var(--muted)}
+.stream-tagline{font-size:12px;color:var(--muted);margin-bottom:18px;
+  padding-bottom:18px;border-bottom:1px solid var(--border);font-weight:300}
+.stream-features{list-style:none}
+.stream-features li{font-size:12px;color:var(--muted);padding:6px 0;
+  border-bottom:1px solid var(--warm);display:flex;gap:8px;
+  line-height:1.5;align-items:flex-start;font-weight:300}
+.stream-features li:last-child{border-bottom:none}
+.stream-features li::before{content:'✓';color:var(--sage);font-weight:600;
+  font-size:11px;flex-shrink:0;margin-top:1px}
+.stream-btn{display:block;width:100%;margin-top:20px;padding:11px;
+  border-radius:50px;text-align:center;font-size:12px;font-weight:500;
+  letter-spacing:.05em;text-decoration:none;transition:all .2s;cursor:pointer;border:none;
+  font-family:'Jost',sans-serif}
+.stream-card:not(.featured) .stream-btn{background:var(--warm);color:var(--text);border:1px solid var(--border)}
+.stream-card:not(.featured) .stream-btn:hover{border-color:var(--rose);color:var(--rose)}
+.stream-card.featured .stream-btn{background:var(--rose);color:white}
+.stream-card.featured .stream-btn:hover{background:var(--rose-dk)}
+
+/* ENHANCEMENT */
+.enhancement-card{background:white;border:1px solid var(--border);border-radius:24px;
+  padding:36px 40px;margin-top:48px;display:grid;
+  grid-template-columns:1fr auto;gap:32px;align-items:start}
+@media(max-width:580px){.enhancement-card{grid-template-columns:1fr}}
+.enhancement-card h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;
+  color:var(--text);margin-bottom:8px}
+.enhancement-card h3 em{color:var(--rose);font-style:italic}
+.enhancement-card p{font-size:14px;color:var(--muted);line-height:1.8;font-weight:300;margin-bottom:16px}
+.enhancement-table{width:100%;border-collapse:collapse;margin-top:16px}
+.enhancement-table th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;padding:8px 12px;text-align:left;
+  border-bottom:1px solid var(--border)}
+.enhancement-table td{font-size:13px;color:var(--text2);padding:10px 12px;
+  border-bottom:1px solid var(--warm);font-weight:300}
+.enhancement-table td:last-child{color:var(--rose-dk);font-weight:500;white-space:nowrap}
+.enhancement-table tr:last-child td{border-bottom:none}
+.enhancement-cta{flex-shrink:0;text-align:center}
+.enhancement-price{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;
+  color:var(--text);margin-bottom:6px;white-space:nowrap}
+.enhancement-price span{font-size:14px;font-weight:300;color:var(--muted);display:block}
+@media(max-width:580px){.enhancement-cta{text-align:left}}
+
+/* SISTERS */
+.sisters-wrap{display:grid;grid-template-columns:220px 1fr;gap:40px;
+  align-items:start;margin-top:48px}
+@media(max-width:620px){.sisters-wrap{grid-template-columns:1fr}}
+.sisters-photo{width:220px;height:260px;border-radius:20px;object-fit:cover;
+  box-shadow:0 8px 32px rgba(0,0,0,.1);display:block}
+@media(max-width:620px){.sisters-photo{width:100%;height:240px}}
+.sisters-content h3{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;
+  color:var(--text);margin-bottom:14px;line-height:1.2}
+.sisters-content h3 em{color:var(--rose);font-style:italic}
+.sisters-content p{font-size:14px;color:var(--muted);line-height:1.9;
+  font-weight:300;margin-bottom:14px}
+.sisters-content p:last-of-type{margin-bottom:0}
+.sisters-content p strong{color:var(--text);font-weight:500}
+.sisters-sig{font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;
+  color:var(--rose-dk);margin-top:20px;display:block}
+
+/* FAQ */
+.faq-list{margin-top:36px}
+.faq-item{background:white;border:1px solid var(--border);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq-q{padding:18px 22px;cursor:pointer;display:flex;align-items:center;
+  justify-content:space-between;font-size:14px;font-weight:500;color:var(--text);
+  user-select:none;gap:12px}
+.faq-q:hover{color:var(--rose)}
+.faq-arrow{color:var(--rose);font-size:18px;flex-shrink:0;transition:transform .25s}
+.faq-item.open .faq-arrow{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;
+  font-size:13px;color:var(--muted);line-height:1.8;font-weight:300;padding:0 22px}
+.faq-item.open .faq-a{max-height:400px;padding:0 22px 20px}
+
+/* PULL QUOTE */
+.pull-quote{background:linear-gradient(135deg,var(--rose-deep),#7A3540);
+  border-radius:24px;padding:52px 48px;text-align:center;
+  position:relative;overflow:hidden;margin:0}
+.pull-quote::before{content:'\201C';font-family:'Cormorant Garamond',serif;
+  font-size:160px;line-height:.7;color:rgba(255,255,255,.06);
+  position:absolute;top:20px;left:24px}
+.pull-quote blockquote{font-family:'Cormorant Garamond',serif;
+  font-size:clamp(20px,3.2vw,32px);font-weight:300;font-style:italic;
+  color:white;line-height:1.5;position:relative;z-index:1;max-width:600px;margin:0 auto}
+.pull-quote cite{display:block;margin-top:18px;font-family:'Jost',sans-serif;
+  font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.45);font-style:normal;position:relative;z-index:1}
+@media(max-width:500px){.pull-quote{padding:36px 24px}}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(145deg,var(--rose-deep) 0%,#6B3A40 50%,#4A2830 100%);
+  border-radius:28px;padding:60px 48px;text-align:center;
+  position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:-80px;right:-80px;
+  width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.04)}
+.final-cta::after{content:'';position:absolute;bottom:-100px;left:-60px;
+  width:350px;height:350px;border-radius:50%;background:rgba(201,169,110,.06)}
+.final-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,56px);
+  font-weight:300;color:white;margin-bottom:14px;line-height:1.15;
+  position:relative;z-index:1}
+.final-cta h2 em{font-style:italic;color:var(--gold)}
+.final-cta p{font-size:15px;color:rgba(255,255,255,.7);line-height:1.8;
+  max-width:500px;margin:0 auto 36px;font-weight:300;position:relative;z-index:1}
+.final-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  position:relative;z-index:1}
+.final-cta .disclaimer{font-size:11px;color:rgba(255,255,255,.3);margin-top:20px;
+  position:relative;z-index:1}
+@media(max-width:500px){.final-cta{padding:40px 24px}}
+
+/* SECTION DIVIDER */
+.divider{height:1px;background:var(--border);margin:0}
+
+/* FOOTER */
+footer{text-align:center;padding:36px 28px 48px;font-size:11px;
+  color:var(--muted);opacity:.7;line-height:1.9}
+footer a{color:var(--muted);text-decoration:underline}
+
+/* UTILS */
+.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}
+.mt24{margin-top:24px}.mt32{margin-top:32px}.mt40{margin-top:40px}
+.center{text-align:center}
+.optional-note{font-size:13px;color:var(--muted);font-weight:300;
+  font-style:italic;margin-top:12px;text-align:center}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:500px){.wrap,.wrap-narrow{padding:0 18px}section{padding:56px 0}}
+</style>
+</head>
+<body>
+<div class="petal p1"></div>
+<div class="petal p2"></div>
+<div class="petal p3"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="/" class="navbar-brand">Sister <span>Wealth</span> Creators</a>
+  <div class="navbar-links">
+    <a href="https://nextchapterblueprint.net" class="nav-btn outline">Start with Blueprint — $97</a>
+    <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="nav-btn fill">Build My Business</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="wrap">
+<section class="hero" style="border:none">
+  <div class="eyebrow center">Sister Wealth Creators</div>
+  <h1 class="display center">Build a Business That<br><em>Supports Your</em><br><strong>Next Chapter</strong></h1>
+  <p class="intro center mt24" style="margin-left:auto;margin-right:auto">
+    Two sisters helping women create income, independence, and confidence — without another exhausting job. Built around your wisdom, your experience, and the life you actually want.
+  </p>
+  <div class="hero-badges mt32">
+    <span class="hero-badge">Guided Process</span>
+    <span class="hero-badge">Built Around You</span>
+    <span class="hero-badge">No Tech Skills Required</span>
+    <span class="hero-badge">Women 60+</span>
+  </div>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px">
+    <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-rose lg">Build My Business — $1,497</a>
+    <a href="https://nextchapterblueprint.net" class="btn btn-outline">Start with the Blueprint — $97</a>
+  </div>
+  <img src="https://sisterwealthcreators.com/hero-lifestyle.jpg" alt="Woman confidently building her next chapter business" class="hero-img" onerror="this.style.display='none'">
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- RETIREMENT PRESSURE -->
+<div class="wrap">
+<section>
+  <div class="eyebrow center">you are not without resources</div>
+  <h2 class="title center">Retirement Was Never Supposed<br>to Feel Like <em>Financial Pressure</em></h2>
+  <div class="ret-block mt40">
+    <p>For many women, the math of retirement does not quite add up. The cost of living keeps rising. Savings that once felt sufficient now feel tighter than expected. And the idea of going back to a traditional job — with its schedules, its demands, its exhaustion — does not feel like freedom at all.</p>
+    <p>But here is what we know: <strong>you are not without resources.</strong></p>
+    <p>You have wisdom. You have experience. You have relationships, skills, and perspective that took decades to build. You have a voice that matters and ideas that deserve space.</p>
+    <p>What you may not have — yet — is a simple, practical way to turn those assets into income. <em>That is what Sister Wealth Creators is here for.</em></p>
+  </div>
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<div style="background:var(--warm);padding:80px 0">
+<div class="wrap">
+  <div class="eyebrow center">the process</div>
+  <h2 class="title center">How It Works</h2>
+  <p class="intro center mt16" style="margin:16px auto 0">Four guided stages that take you from where you are now to a business that is ready to launch — built entirely around you.</p>
+  <div class="journey">
+    <div class="journey-step">
+      <div class="journey-circle">✦</div>
+      <div class="journey-label">Discover</div>
+      <div class="journey-desc">We capture your experience, strengths, values, and dreams in your Soul File</div>
+      <div class="journey-arrow">→</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-circle">◈</div>
+      <div class="journey-label">Clarify</div>
+      <div class="journey-desc">We define your Dream Life and calculate your exact income targets</div>
+      <div class="journey-arrow">→</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-circle">◇</div>
+      <div class="journey-label">Design</div>
+      <div class="journey-desc">We create your business ideas and build your complete foundation</div>
+      <div class="journey-arrow">→</div>
+    </div>
+    <div class="journey-step">
+      <div class="journey-circle">🌱</div>
+      <div class="journey-label">Launch</div>
+      <div class="journey-desc">You get everything you need to start generating income — ready to go</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- MAIN OFFER -->
+<div class="wrap" id="offer">
+<section>
+  <div class="eyebrow">the next chapter business build</div>
+  <h2 class="title">A Business <em>Designed Around</em><br>the Woman You Are Now</h2>
+  <p class="intro mt16">Not a template. Not a random idea pulled from the internet. A business built from your wisdom, your experience, your dreams, and the lifestyle you want to create.</p>
+
+  <div class="offer-card">
+    <div class="offer-header">
+      <div class="offer-eyebrow">The Next Chapter Business Build</div>
+      <h2>Everything You Need to<br><em>Launch Your Business</em></h2>
+      <p>A guided business-building experience for women starting from scratch — creating a simple, meaningful business built around your life.</p>
+      <div class="offer-price-tag">
+        <div class="amount">$1,497</div>
+        <div class="period">one-time setup</div>
+      </div>
+    </div>
+    <div class="offer-body">
+      <p style="font-size:14px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:24px">
+        This creates what we call <strong style="color:var(--text)">"retirement breathing-room income"</strong> — extra monthly income designed to ease financial pressure, create more choice, and support a more confident next chapter. Your business should support the life you want — not consume the life you have.
+      </p>
+      <div class="includes-grid">
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Personal Business Bot Setup</strong>Your own AI assistant inside OpenClaw, built around your business</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Soul File Creation</strong>Capture your experience, strengths, values, and dreams as your foundation</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Dream Life / Income Vision</strong>Calculate exact income targets — down to the penny, up to the dream</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Business Idea Generation</strong>10 custom ideas narrowed to your perfect fit using the Sister Wealth Fit Framework™</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Business Foundation</strong>Name, tagline, offer, pricing, and brand voice — all yours</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Funnel Deliverables</strong>Landing page, lead magnet, and complete customer journey mapped</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Email Campaign</strong>6-email sequence written, ready to send from day one</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Social Media Starter Pack</strong>30-day content plan with 30 posts — no blank page panic</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Launch Plan</strong>30-day action plan with outreach messages — start moving immediately</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Build Review</strong>Complete summary document with your next steps clearly mapped</div></div>
+      </div>
+      <div class="payment-plan">
+        <div class="payment-plan-icon">💛</div>
+        <div class="payment-plan-text">
+          <strong>Payment plan available</strong>
+          3 payments of $525 each — contact us to arrange before purchasing
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+        <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-rose" style="flex:1;min-width:200px;text-align:center">Build My Business — $1,497</a>
+        <a href="mailto:support@reclaimedvitality.ca?subject=Payment Plan Inquiry" class="btn btn-outline" style="flex:1;min-width:160px;text-align:center">Ask About Payment Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- DREAM LIFE CALCULATOR -->
+<div class="wrap">
+<section>
+  <div class="eyebrow sage center">the dream life goal</div>
+  <h2 class="title center">Know Your <em>Number</em></h2>
+  <p class="intro center mt16" style="margin-left:auto;margin-right:auto">Once you can see the life you want to build, we can design a business that supports it. This calculator helps you find that number.</p>
+
+  <div class="calc-wrap">
+    <div class="calc-header">
+      <div class="calc-eyebrow">Dream Life Goal Calculator</div>
+      <h2>What Would Your <em>Dream Life</em> Actually Cost?</h2>
+      <p>This is not about pressure. This is about clarity. Enter your estimated monthly costs below and see the income target that would support your vision.</p>
+    </div>
+    <div class="calc-body">
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label>Dream Home</label>
+          <div class="calc-hint">Mortgage/rent, utilities, maintenance, upgrades, condo fees</div>
+          <div class="input-wrap"><input type="number" id="c-home" placeholder="0" min="0" oninput="calcUpdate()"></div>
+        </div>
+        <div class="calc-field">
+          <label>Dream Car</label>
+          <div class="calc-hint">Payment/lease, insurance, fuel, maintenance, second vehicle</div>
+          <div class="input-wrap"><input type="number" id="c-car" placeholder="0" min="0" oninput="calcUpdate()"></div>
+        </div>
+        <div class="calc-field">
+          <label>Travel & Experiences</label>
+          <div class="calc-hint">Trips, cruises, flights, hotels, retreats, bucket-list adventures</div>
+          <div class="input-wrap"><input type="number" id="c-travel" placeholder="0" min="0" oninput="calcUpdate()"></div>
+        </div>
+        <div class="calc-field">
+          <label>Food & Dining</label>
+          <div class="calc-hint">Groceries, dining out, coffee dates, fine dining, wine experiences</div>
+          <div class="input-wrap"><input type="number" id="c-food" placeholder="0" min="0" oninput="calcUpdate()"></div>
+        </div>
+        <div class="calc-field" style="grid-column:span 2">
+          <label>Everything Else</label>
+          <div class="calc-hint">Health, wellness, fitness, beauty, hobbies, gifts, family support, savings, charitable giving, fun money</div>
+          <div class="input-wrap"><input type="number" id="c-other" placeholder="0" min="0" oninput="calcUpdate()"></div>
+        </div>
+      </div>
+      <button class="calc-btn" onclick="calcRun()">Calculate My Dream Life Number →</button>
+
+      <div class="calc-result" id="calc-result">
+        <div class="result-grid">
+          <div class="result-card day">
+            <div class="result-label">Per Day</div>
+            <div class="result-amount" id="r-day">$0</div>
+            <div class="result-note">to earn daily</div>
+          </div>
+          <div class="result-card month">
+            <div class="result-label">Per Month</div>
+            <div class="result-amount" id="r-month">$0</div>
+            <div class="result-note">your monthly target</div>
+          </div>
+          <div class="result-card year">
+            <div class="result-label">Per Year</div>
+            <div class="result-amount" id="r-year">$0</div>
+            <div class="result-note">annual goal</div>
+          </div>
+        </div>
+        <div class="calc-message">
+          <strong>This is your number.</strong>
+          This is what we design your business around — not someone else's idea of success, but the life you actually want to live. Once you know your number, you can build toward it with intention.
+        </div>
+        <div style="text-align:center;margin-top:20px">
+          <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-sage">Build a Business Around This Number →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="optional-note mt16">This is a planning tool, not a guarantee. Individual results depend on effort, market conditions, and personal circumstances.</p>
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- PULL QUOTE -->
+<div class="wrap" style="padding:56px 0">
+  <div class="pull-quote">
+    <blockquote>Your business should support the life you want — not consume the life you have.</blockquote>
+    <cite>— Patricia &amp; Joanne, Sister Wealth Creators</cite>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- MONTHLY SUPPORT STREAMS -->
+<div style="background:var(--warm);padding:80px 0">
+<div class="wrap">
+  <div class="eyebrow center">completely optional</div>
+  <h2 class="title center">Keep Your Business <em>Moving</em></h2>
+  <p class="intro center mt16" style="margin-left:auto;margin-right:auto">Once your business foundation is in place, these optional monthly support streams help you stay visible, consistent, and growing. Choose what fits — or do it all yourself.</p>
+
+  <div class="streams-grid">
+    <div class="stream-card">
+      <div class="stream-name">Post Stream</div>
+      <div class="stream-price">$97<span>/month</span></div>
+      <div class="stream-tagline">Monthly social media visibility support</div>
+      <ul class="stream-features">
+        <li>Monthly content theme</li>
+        <li>12 social media post drafts per month</li>
+        <li>4 story prompts per month</li>
+        <li>4 CTA / invitation prompts</li>
+        <li>Simple monthly content calendar</li>
+      </ul>
+      <a href="https://buy.stripe.com/14AdRa9YEeV5gD8aR06oo0o" class="stream-btn">Add Post Stream</a>
+    </div>
+    <div class="stream-card featured">
+      <div class="stream-popular">Most Popular</div>
+      <div class="stream-name">Growth Stream</div>
+      <div class="stream-price">$197<span>/month</span></div>
+      <div class="stream-tagline">Content plus light business support</div>
+      <ul class="stream-features">
+        <li>Everything in Post Stream</li>
+        <li>Monthly offer / content refresh</li>
+        <li>1 email or newsletter draft per month</li>
+        <li>Follow-up message prompts</li>
+        <li>Monthly visibility check-in</li>
+        <li>Light business bot updates</li>
+      </ul>
+      <a href="https://buy.stripe.com/aFaeVe5Io4gr1Ie5wG6oo0p" class="stream-btn">Add Growth Stream</a>
+    </div>
+    <div class="stream-card">
+      <div class="stream-name">Systems Stream</div>
+      <div class="stream-price">$397<span>/month</span></div>
+      <div class="stream-tagline">Ongoing systems support</div>
+      <ul class="stream-features">
+        <li>Everything in Growth Stream</li>
+        <li>Ongoing smart workflow support</li>
+        <li>Funnel updates</li>
+        <li>Lead magnet or email sequence updates</li>
+        <li>AEO / content visibility support</li>
+        <li>Monthly business systems review</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="https://buy.stripe.com/9B6bJ22wc3cn86C1gq6oo0q" class="stream-btn">Add Systems Stream</a>
+    </div>
+  </div>
+  <p class="optional-note mt24">These are completely optional. You own your business. We simply help support the smart systems behind it.</p>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ENHANCEMENT BUILD -->
+<div class="wrap">
+<section id="pricing-sheet">
+  <div class="eyebrow">already have a business?</div>
+  <h2 class="title">The Business <em>Enhancement</em> Build</h2>
+  <p class="intro mt16">A focused upgrade for women who already have a business and want AI-supported systems to save time, reduce overwhelm, improve visibility, and support growth.</p>
+
+  <div class="enhancement-card">
+    <div>
+      <h3>Business <em>Enhancement</em> Build</h3>
+      <p>We start with a Business Enhancement Review to identify what you need most, then recommend specific upgrades tailored to your business. Starting at $997.</p>
+      <div class="payment-plan" style="margin-top:16px">
+        <div class="payment-plan-icon">💛</div>
+        <div class="payment-plan-text">
+          <strong>Payment plan available</strong>
+          2 payments of $525 each — contact us to arrange
+        </div>
+      </div>
+      <table class="enhancement-table mt24">
+        <thead><tr><th>Service</th><th>Investment</th></tr></thead>
+        <tbody>
+          <tr><td>Post Stream Setup</td><td>$297 + $97/mo</td></tr>
+          <tr><td>Landing Page Build or Refresh</td><td>$497 – $997</td></tr>
+          <tr><td>Lead Magnet Builder</td><td>$197 – $297</td></tr>
+          <tr><td>Email Follow-Up System</td><td>$497 – $997</td></tr>
+          <tr><td>AEO Visibility Starter</td><td>$497 – $1,500</td></tr>
+          <tr><td>Smart Business Assistant Setup</td><td>$497 – $1,500</td></tr>
+          <tr><td>Website Build or Refresh</td><td>$1,500 – $3,500+</td></tr>
+          <tr><td>Full Business Systems Upgrade</td><td>$2,500+</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="enhancement-cta">
+      <div class="enhancement-price">From $997<span>one-time</span></div>
+      <a href="https://buy.stripe.com/7sY4gAdaQ4gr2Mi4sC6oo0n" class="btn btn-gold" style="display:block;white-space:nowrap">Explore Enhancement Build</a>
+      <div style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center">We'll review and recommend<br>what fits your business</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- SISTERS NOTE -->
+<div style="background:var(--warm);padding:80px 0">
+<div class="wrap">
+  <div class="eyebrow center">a note from us</div>
+  <div class="sisters-wrap">
+    <img src="https://sisterwealthcreators.com/sisters.jpg" alt="Patricia and Joanne — Sisters and Co-Creators of Sister Wealth Creators" class="sisters-photo" onerror="this.style.display='none'">
+    <div class="sisters-content">
+      <h3>Hi, we're Patricia<br>&amp; <em>Joanne</em></h3>
+      <p>Sisters, women in our 60s, and co-creators of Sister Wealth Creators. We are in this chapter of life too — and we understand what it feels like to look at the future and wonder how to create more freedom, more income, and more choice without sacrificing everything you've worked for.</p>
+      <p>Like many women, we have felt the pressure of rising costs and the reality that retirement does not always look the way we imagined. But we also believe this chapter can still be <strong>creative, meaningful, and full of possibility.</strong></p>
+      <p>We created Sister Wealth Creators because we want to build a more retirement-friendly lifestyle for ourselves — and help other women create a pathway toward their own dreams too.</p>
+      <p>This is not about starting over or becoming someone you are not. It is about taking the wisdom, skills, experience, and dreams you already have and turning them into something practical, supported, and income-building.</p>
+      <p><strong>You own the business. We help build and support the smart systems behind it.</strong></p>
+      <p>We would be honoured to walk this path with you.</p>
+      <span class="sisters-sig">— Patricia &amp; Joanne</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<div class="wrap">
+<section>
+  <div class="eyebrow center">honest answers</div>
+  <h2 class="title center">Questions We Hear Often</h2>
+  <div class="faq-list">
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you guarantee I will make money? <span class="faq-arrow">+</span></div><div class="faq-a">No. No ethical business can guarantee income. What we can do is help you create a thoughtful business foundation, practical assets, and smart systems designed to support visibility, action, and income-building opportunities. Your results will depend on your effort, your market, and your consistency.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need to know what business I want to start? <span class="faq-arrow">+</span></div><div class="faq-a">No — that is part of the process. We use your Soul File and Dream Life / Income Vision to generate business ideas that fit your skills, experience, energy, and goals. Many of our clients come in with no idea and leave with a direction they are genuinely excited about.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need to be tech-savvy? <span class="faq-arrow">+</span></div><div class="faq-a">No. The process is guided. The technology supports the business build, but you do not need to become a tech expert. We design systems that work for you — not systems you have to learn to operate.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is a Soul File? <span class="faq-arrow">+</span></div><div class="faq-a">Your Soul File is the foundation of everything we build. It captures your experience, strengths, talents, dreams, values, goals, and lifestyle vision — so the business we design is built around who you actually are, not a generic idea of who a business owner should be.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the Dream Life / Income Vision process? <span class="faq-arrow">+</span></div><div class="faq-a">It is our guided process that helps you define your dream lifestyle down to the penny — calculating exactly how much you need to earn, broken down into yearly, monthly, weekly, daily, and hourly income targets. These become the planning goals for designing your business. They are planning goals, not guarantees.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is Post Stream or monthly support required? <span class="faq-arrow">+</span></div><div class="faq-a">No. All monthly support options are completely optional. You can choose to do your own social media and ongoing updates, or subscribe to the level of support that helps you stay consistent. There is no pressure and no obligation.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long does the build take? <span class="faq-arrow">+</span></div><div class="faq-a">Most builds are delivered within 2–3 weeks after the intake process is complete, depending on scope and how quickly you complete your questionnaires. We will keep you informed throughout.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I start with the Blueprint or go straight to the Business Build? <span class="faq-arrow">+</span></div><div class="faq-a">If you already have a strong sense of what kind of business you want to build, go straight to the Business Build. If you want to explore your options first and get 10 personalized business ideas before committing, start with the $97 Next Chapter Business Blueprint — and apply your $97 toward the full build if you decide to upgrade within 14 days.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there a payment plan? <span class="faq-arrow">+</span></div><div class="faq-a">Yes. The Next Chapter Business Build is available as 3 payments of $525 each. The Business Enhancement Build is available as 2 payments of $525 each. Contact us at support@reclaimedvitality.ca to arrange your payment plan before purchasing.</div></div>
+  </div>
+</section>
+</div>
+
+<div class="divider"></div>
+
+<!-- FINAL CTA -->
+<div class="wrap" style="padding:56px 0 80px">
+  <div class="final-cta">
+    <div class="eyebrow center" style="color:rgba(255,255,255,.5);margin-bottom:20px">
+      <span style="display:flex;align-items:center;gap:10px;justify-content:center">
+        <span style="flex:1;max-width:80px;height:1px;background:rgba(255,255,255,.15);display:block"></span>
+        you are ready
+        <span style="flex:1;max-width:80px;height:1px;background:rgba(255,255,255,.15);display:block"></span>
+      </span>
+    </div>
+    <h2>Choose Your<br><em>Starting Point</em></h2>
+    <p>You do not have to know every detail today. You simply need to choose the starting point that fits where you are right now. Both paths lead to the same place — a business built around your life.</p>
+    <div class="final-cta-btns">
+      <a href="https://nextchapterblueprint.net" class="btn btn-white">Start with the Blueprint — $97</a>
+      <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-gold">Build My Business — $1,497</a>
+    </div>
+    <div class="final-cta-btns mt16">
+      <a href="https://buy.stripe.com/7sY4gAdaQ4gr2Mi4sC6oo0n" class="btn btn-outline" style="color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.2)">Already Have a Business? Enhancement Build →</a>
+    </div>
+    <p class="disclaimer">Sister Wealth Creators provides business-building guidance, systems, and tools. We do not guarantee income or business results. Individual success depends on many factors including effort, market conditions, and personal circumstances.</p>
+  </div>
+</div>
+
+<footer>
+  <div>© 2026 Sister Wealth Creators. All rights reserved.</div>
+  <div style="margin-top:6px">Questions? <a href="mailto:support@reclaimedvitality.ca">support@reclaimedvitality.ca</a></div>
+  <div style="margin-top:6px">Sister Wealth Creators provides business-building guidance and tools. We do not guarantee income or business results.</div>
+</footer>
+
+<script>
+// FAQ
+function toggleFaq(el){
+  const item=el.parentElement;
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+
+// CALCULATOR
+function fmt(n){
+  return '$'+Math.round(n).toLocaleString('en-US');
+}
+function calcUpdate(){}
+function calcRun(){
+  const home=parseFloat(document.getElementById('c-home').value)||0;
+  const car=parseFloat(document.getElementById('c-car').value)||0;
+  const travel=parseFloat(document.getElementById('c-travel').value)||0;
+  const food=parseFloat(document.getElementById('c-food').value)||0;
+  const other=parseFloat(document.getElementById('c-other').value)||0;
+  const monthly=home+car+travel+food+other;
+  if(monthly===0){
+    alert('Please enter at least one monthly cost to calculate your number.');
+    return;
+  }
+  const yearly=monthly*12;
+  const daily=monthly/30;
+  document.getElementById('r-day').textContent=fmt(daily);
+  document.getElementById('r-month').textContent=fmt(monthly);
+  document.getElementById('r-year').textContent=fmt(yearly);
+  const result=document.getElementById('calc-result');
+  result.classList.add('visible');
+  result.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+// SCROLL REVEAL
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.07});
+document.querySelectorAll('.inc-item,.journey-step,.stream-card,.faq-item').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(16px)';
+  el.style.transition='opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
