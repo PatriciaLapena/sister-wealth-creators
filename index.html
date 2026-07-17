@@ -346,6 +346,33 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif}
   position:relative;z-index:1}
 @media(max-width:500px){.final-cta{padding:40px 24px}}
 
+/* TWO WAYS PRICING */
+.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+@media(max-width:700px){.paths-grid{grid-template-columns:1fr}}
+.path-card{background:white;border:1px solid var(--border);border-radius:24px;
+  padding:36px 32px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.path-card.featured{border-color:var(--rose);box-shadow:0 8px 40px rgba(201,123,132,.15)}
+.path-eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;margin-bottom:10px}
+.path-name{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;
+  color:var(--text);margin-bottom:4px}
+.path-price{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;
+  color:var(--rose-dk);margin-bottom:14px}
+.path-price span{font-size:13px;font-weight:300;color:var(--muted)}
+.path-desc{font-size:13px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:20px}
+.path-features{list-style:none;margin-bottom:24px;flex-grow:1}
+.path-features li{font-size:13px;color:var(--text2);padding:7px 0;
+  display:flex;gap:8px;align-items:flex-start;line-height:1.5;font-weight:300}
+.path-features li::before{content:'✓';color:var(--sage);font-weight:600;
+  font-size:11px;flex-shrink:0;margin-top:2px}
+.path-note{font-size:11px;color:var(--muted);font-style:italic;margin-top:12px;text-align:center}
+
+/* SISTERS PHOTO STRIP */
+.sisters-strip{display:flex;gap:16px;margin-top:48px;justify-content:center;flex-wrap:wrap}
+.sisters-strip img{width:180px;height:200px;object-fit:cover;border-radius:16px;
+  box-shadow:0 8px 32px rgba(0,0,0,.1);display:block}
+@media(max-width:560px){.sisters-strip img{width:calc(33.333% - 11px);height:140px}}
+
 /* SECTION DIVIDER */
 .divider{height:1px;background:var(--border);margin:0}
 
@@ -375,7 +402,7 @@ footer a{color:var(--muted);text-decoration:underline}
   <a href="/" class="navbar-brand">Sister <span>Wealth</span> Creators</a>
   <div class="navbar-links">
     <a href="https://nextchapterblueprint.net" class="nav-btn outline">Start with Blueprint — $97</a>
-    <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="nav-btn fill">Build My Business</a>
+    <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="nav-btn fill">Build My Business — $997</a>
   </div>
 </nav>
 
@@ -402,10 +429,10 @@ footer a{color:var(--muted);text-decoration:underline}
     <span class="hero-badge">Women 60+</span>
   </div>
   <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px">
-    <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-rose lg">Build My Business — $1,497</a>
+    <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="btn btn-rose lg">Build My Business — $997</a>
     <a href="https://nextchapterblueprint.net" class="btn btn-outline">Start with the Blueprint — $97</a>
   </div>
-  <img src="https://sisterwealthcreators.com/hero-lifestyle.jpg" alt="Woman confidently building her next chapter business" class="hero-img" onerror="this.style.display='none'">
+  <img src="https://sisterwealthcreators.com/hero-group.jpg" alt="Patricia, Joanne and Sue of Sister Wealth Creators" class="hero-img" onerror="this.style.display='none'">
 </section>
 </div>
 
@@ -463,6 +490,48 @@ footer a{color:var(--muted);text-decoration:underline}
 
 <div class="divider"></div>
 
+<!-- TWO WAYS TO GET THERE -->
+<div class="wrap" id="two-ways">
+<section>
+  <div class="eyebrow center">choose your path</div>
+  <h2 class="title center">Two Ways to <em>Get There</em></h2>
+  <div class="paths-grid">
+    <div class="path-card">
+      <div class="path-eyebrow">Do it yourself</div>
+      <div class="path-name">SWC Community</div>
+      <div class="path-price">$37 <span>/ month</span></div>
+      <div class="path-desc">Build it yourself, with our help. Tutorials, tools, and live Q&amp;A to guide you at your own pace.</div>
+      <ul class="path-features">
+        <li>Full library of step-by-step tutorials</li>
+        <li>Templates &amp; tools for every stage of your build</li>
+        <li>Live monthly Q&amp;A with Patricia, Joanne &amp; Sue</li>
+        <li>A community of women doing this alongside you</li>
+        <li>Cancel anytime</li>
+      </ul>
+      <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators" class="btn btn-outline" style="text-align:center">Join the Community — $37/mo</a>
+      <div class="path-note">Included free for life with the Business Build.</div>
+    </div>
+    <div class="path-card featured">
+      <div class="path-eyebrow">Done with you</div>
+      <div class="path-name">Next Chapter Business Build</div>
+      <div class="path-price">$997 <span>one-time</span></div>
+      <div class="path-desc">A guided, hands-on build. We do the heavy lifting alongside you.</div>
+      <ul class="path-features">
+        <li>Soul File + Dream Life deep-dive</li>
+        <li>Custom business ideas &amp; complete Business Foundation</li>
+        <li>Funnel, email sequence, and 30-day social content</li>
+        <li>Launch plan, ready to move on day one</li>
+        <li>Lifetime SWC Community access included</li>
+      </ul>
+      <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="btn btn-rose" style="text-align:center">Build My Business — $997</a>
+      <div class="path-note">Already did the $97 Blueprint? That credit applies if you upgrade within 14 days.</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="divider"></div>
+
 <!-- MAIN OFFER -->
 <div class="wrap" id="offer">
 <section>
@@ -476,8 +545,8 @@ footer a{color:var(--muted);text-decoration:underline}
       <h2>Everything You Need to<br><em>Launch Your Business</em></h2>
       <p>A guided business-building experience for women starting from scratch — creating a simple, meaningful business built around your life.</p>
       <div class="offer-price-tag">
-        <div class="amount">$1,497</div>
-        <div class="period">one-time setup</div>
+        <div class="amount">$997</div>
+        <div class="period">one-time setup · includes lifetime SWC Community access</div>
       </div>
     </div>
     <div class="offer-body">
@@ -485,10 +554,10 @@ footer a{color:var(--muted);text-decoration:underline}
         This creates what we call <strong style="color:var(--text)">"retirement breathing-room income"</strong> — extra monthly income designed to ease financial pressure, create more choice, and support a more confident next chapter. Your business should support the life you want — not consume the life you have.
       </p>
       <div class="includes-grid">
-        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Personal Business Bot Setup</strong>Your own AI assistant inside OpenClaw, built around your business</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Personal Business Bot Setup</strong>Your own AI assistant, built around your business</div></div>
         <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Soul File Creation</strong>Capture your experience, strengths, values, and dreams as your foundation</div></div>
         <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Dream Life / Income Vision</strong>Calculate exact income targets — down to the penny, up to the dream</div></div>
-        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Business Idea Generation</strong>10 custom ideas narrowed to your perfect fit using the Sister Wealth Fit Framework™</div></div>
+        <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Business Idea Generation</strong>10 custom ideas narrowed to your perfect fit</div></div>
         <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Business Foundation</strong>Name, tagline, offer, pricing, and brand voice — all yours</div></div>
         <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Funnel Deliverables</strong>Landing page, lead magnet, and complete customer journey mapped</div></div>
         <div class="inc-item"><div class="inc-dot"></div><div class="inc-text"><strong>Email Campaign</strong>6-email sequence written, ready to send from day one</div></div>
@@ -499,12 +568,12 @@ footer a{color:var(--muted);text-decoration:underline}
       <div class="payment-plan">
         <div class="payment-plan-icon">💛</div>
         <div class="payment-plan-text">
-          <strong>Payment plan available</strong>
-          3 payments of $525 each — contact us to arrange before purchasing
+          <strong>Payment plans are available</strong>
+          Contact us at support@reclaimedvitality.ca.
         </div>
       </div>
       <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
-        <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-rose" style="flex:1;min-width:200px;text-align:center">Build My Business — $1,497</a>
+        <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="btn btn-rose" style="flex:1;min-width:200px;text-align:center">Build My Business — $997</a>
         <a href="mailto:support@reclaimedvitality.ca?subject=Payment Plan Inquiry" class="btn btn-outline" style="flex:1;min-width:160px;text-align:center">Ask About Payment Plan</a>
       </div>
     </div>
@@ -580,7 +649,7 @@ footer a{color:var(--muted);text-decoration:underline}
           This is what we design your business around — not someone else's idea of success, but the life you actually want to live. Once you know your number, you can build toward it with intention.
         </div>
         <div style="text-align:center;margin-top:20px">
-          <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-sage">Build a Business Around This Number →</a>
+          <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="btn btn-sage">Build a Business Around This Number →</a>
         </div>
       </div>
     </div>
@@ -601,103 +670,13 @@ footer a{color:var(--muted);text-decoration:underline}
 
 <div class="divider"></div>
 
-<!-- MONTHLY SUPPORT STREAMS -->
-<div style="background:var(--warm);padding:80px 0">
+<!-- SISTERS PHOTOS -->
 <div class="wrap">
-  <div class="eyebrow center">completely optional</div>
-  <h2 class="title center">Keep Your Business <em>Moving</em></h2>
-  <p class="intro center mt16" style="margin-left:auto;margin-right:auto">Once your business foundation is in place, these optional monthly support streams help you stay visible, consistent, and growing. Choose what fits — or do it all yourself.</p>
-
-  <div class="streams-grid">
-    <div class="stream-card">
-      <div class="stream-name">Post Stream</div>
-      <div class="stream-price">$97<span>/month</span></div>
-      <div class="stream-tagline">Monthly social media visibility support</div>
-      <ul class="stream-features">
-        <li>Monthly content theme</li>
-        <li>12 social media post drafts per month</li>
-        <li>4 story prompts per month</li>
-        <li>4 CTA / invitation prompts</li>
-        <li>Simple monthly content calendar</li>
-      </ul>
-      <a href="https://buy.stripe.com/14AdRa9YEeV5gD8aR06oo0o" class="stream-btn">Add Post Stream</a>
-    </div>
-    <div class="stream-card featured">
-      <div class="stream-popular">Most Popular</div>
-      <div class="stream-name">Growth Stream</div>
-      <div class="stream-price">$197<span>/month</span></div>
-      <div class="stream-tagline">Content plus light business support</div>
-      <ul class="stream-features">
-        <li>Everything in Post Stream</li>
-        <li>Monthly offer / content refresh</li>
-        <li>1 email or newsletter draft per month</li>
-        <li>Follow-up message prompts</li>
-        <li>Monthly visibility check-in</li>
-        <li>Light business bot updates</li>
-      </ul>
-      <a href="https://buy.stripe.com/aFaeVe5Io4gr1Ie5wG6oo0p" class="stream-btn">Add Growth Stream</a>
-    </div>
-    <div class="stream-card">
-      <div class="stream-name">Systems Stream</div>
-      <div class="stream-price">$397<span>/month</span></div>
-      <div class="stream-tagline">Ongoing systems support</div>
-      <ul class="stream-features">
-        <li>Everything in Growth Stream</li>
-        <li>Ongoing smart workflow support</li>
-        <li>Funnel updates</li>
-        <li>Lead magnet or email sequence updates</li>
-        <li>AEO / content visibility support</li>
-        <li>Monthly business systems review</li>
-        <li>Priority support</li>
-      </ul>
-      <a href="https://buy.stripe.com/9B6bJ22wc3cn86C1gq6oo0q" class="stream-btn">Add Systems Stream</a>
-    </div>
+  <div class="sisters-strip">
+    <img src="https://sisterwealthcreators.com/joanne.jpg" alt="Joanne" onerror="this.style.display='none'">
+    <img src="https://sisterwealthcreators.com/patricia.jpg" alt="Patricia" onerror="this.style.display='none'">
+    <img src="https://sisterwealthcreators.com/sue.jpg" alt="Sue" onerror="this.style.display='none'">
   </div>
-  <p class="optional-note mt24">These are completely optional. You own your business. We simply help support the smart systems behind it.</p>
-</div>
-</div>
-
-<div class="divider"></div>
-
-<!-- ENHANCEMENT BUILD -->
-<div class="wrap">
-<section id="pricing-sheet">
-  <div class="eyebrow">already have a business?</div>
-  <h2 class="title">The Business <em>Enhancement</em> Build</h2>
-  <p class="intro mt16">A focused upgrade for women who already have a business and want AI-supported systems to save time, reduce overwhelm, improve visibility, and support growth.</p>
-
-  <div class="enhancement-card">
-    <div>
-      <h3>Business <em>Enhancement</em> Build</h3>
-      <p>We start with a Business Enhancement Review to identify what you need most, then recommend specific upgrades tailored to your business. Starting at $997.</p>
-      <div class="payment-plan" style="margin-top:16px">
-        <div class="payment-plan-icon">💛</div>
-        <div class="payment-plan-text">
-          <strong>Payment plan available</strong>
-          2 payments of $525 each — contact us to arrange
-        </div>
-      </div>
-      <table class="enhancement-table mt24">
-        <thead><tr><th>Service</th><th>Investment</th></tr></thead>
-        <tbody>
-          <tr><td>Post Stream Setup</td><td>$297 + $97/mo</td></tr>
-          <tr><td>Landing Page Build or Refresh</td><td>$497 – $997</td></tr>
-          <tr><td>Lead Magnet Builder</td><td>$197 – $297</td></tr>
-          <tr><td>Email Follow-Up System</td><td>$497 – $997</td></tr>
-          <tr><td>AEO Visibility Starter</td><td>$497 – $1,500</td></tr>
-          <tr><td>Smart Business Assistant Setup</td><td>$497 – $1,500</td></tr>
-          <tr><td>Website Build or Refresh</td><td>$1,500 – $3,500+</td></tr>
-          <tr><td>Full Business Systems Upgrade</td><td>$2,500+</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="enhancement-cta">
-      <div class="enhancement-price">From $997<span>one-time</span></div>
-      <a href="https://buy.stripe.com/7sY4gAdaQ4gr2Mi4sC6oo0n" class="btn btn-gold" style="display:block;white-space:nowrap">Explore Enhancement Build</a>
-      <div style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center">We'll review and recommend<br>what fits your business</div>
-    </div>
-  </div>
-</section>
 </div>
 
 <div class="divider"></div>
@@ -706,9 +685,8 @@ footer a{color:var(--muted);text-decoration:underline}
 <div style="background:var(--warm);padding:80px 0">
 <div class="wrap">
   <div class="eyebrow center">a note from us</div>
-  <div class="sisters-wrap">
-    <img src="https://sisterwealthcreators.com/sisters.jpg" alt="Patricia and Joanne — Sisters and Co-Creators of Sister Wealth Creators" class="sisters-photo" onerror="this.style.display='none'">
-    <div class="sisters-content">
+  <div class="sisters-wrap" style="grid-template-columns:1fr;max-width:640px;margin-left:auto;margin-right:auto">
+    <div class="sisters-content" style="text-align:center">
       <h3>Hi, we're Patricia<br>&amp; <em>Joanne</em></h3>
       <p>Sisters, women in our 60s, and co-creators of Sister Wealth Creators. We are in this chapter of life too — and we understand what it feels like to look at the future and wonder how to create more freedom, more income, and more choice without sacrificing everything you've worked for.</p>
       <p>Like many women, we have felt the pressure of rising costs and the reality that retirement does not always look the way we imagined. But we also believe this chapter can still be <strong>creative, meaningful, and full of possibility.</strong></p>
@@ -734,11 +712,11 @@ footer a{color:var(--muted);text-decoration:underline}
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need to know what business I want to start? <span class="faq-arrow">+</span></div><div class="faq-a">No — that is part of the process. We use your Soul File and Dream Life / Income Vision to generate business ideas that fit your skills, experience, energy, and goals. Many of our clients come in with no idea and leave with a direction they are genuinely excited about.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need to be tech-savvy? <span class="faq-arrow">+</span></div><div class="faq-a">No. The process is guided. The technology supports the business build, but you do not need to become a tech expert. We design systems that work for you — not systems you have to learn to operate.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is a Soul File? <span class="faq-arrow">+</span></div><div class="faq-a">Your Soul File is the foundation of everything we build. It captures your experience, strengths, talents, dreams, values, goals, and lifestyle vision — so the business we design is built around who you actually are, not a generic idea of who a business owner should be.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the Dream Life / Income Vision process? <span class="faq-arrow">+</span></div><div class="faq-a">It is our guided process that helps you define your dream lifestyle down to the penny — calculating exactly how much you need to earn, broken down into yearly, monthly, weekly, daily, and hourly income targets. These become the planning goals for designing your business. They are planning goals, not guarantees.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is Post Stream or monthly support required? <span class="faq-arrow">+</span></div><div class="faq-a">No. All monthly support options are completely optional. You can choose to do your own social media and ongoing updates, or subscribe to the level of support that helps you stay consistent. There is no pressure and no obligation.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's the difference between the Community and the Business Build? <span class="faq-arrow">+</span></div><div class="faq-a">The SWC Community ($37/month) is do-it-yourself. The Business Build ($997 one-time) is done-with-you and includes lifetime Community access.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What if I already have a business? <span class="faq-arrow">+</span></div><div class="faq-a">The SWC Community ($37/month) works well if you already have a business — the tutorials, tools, and live Q&amp;A support any stage of building or growing, not just brand-new starts.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long does the build take? <span class="faq-arrow">+</span></div><div class="faq-a">Most builds are delivered within 2–3 weeks after the intake process is complete, depending on scope and how quickly you complete your questionnaires. We will keep you informed throughout.</div></div>
     <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Should I start with the Blueprint or go straight to the Business Build? <span class="faq-arrow">+</span></div><div class="faq-a">If you already have a strong sense of what kind of business you want to build, go straight to the Business Build. If you want to explore your options first and get 10 personalized business ideas before committing, start with the $97 Next Chapter Business Blueprint — and apply your $97 toward the full build if you decide to upgrade within 14 days.</div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there a payment plan? <span class="faq-arrow">+</span></div><div class="faq-a">Yes. The Next Chapter Business Build is available as 3 payments of $525 each. The Business Enhancement Build is available as 2 payments of $525 each. Contact us at support@reclaimedvitality.ca to arrange your payment plan before purchasing.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is there a payment plan? <span class="faq-arrow">+</span></div><div class="faq-a">Yes — contact us at support@reclaimedvitality.ca to arrange your payment plan before purchasing.</div></div>
   </div>
 </section>
 </div>
@@ -759,10 +737,8 @@ footer a{color:var(--muted);text-decoration:underline}
     <p>You do not have to know every detail today. You simply need to choose the starting point that fits where you are right now. Both paths lead to the same place — a business built around your life.</p>
     <div class="final-cta-btns">
       <a href="https://nextchapterblueprint.net" class="btn btn-white">Start with the Blueprint — $97</a>
-      <a href="https://buy.stripe.com/9B614ofiY00b2MibV46oo0m" class="btn btn-gold">Build My Business — $1,497</a>
-    </div>
-    <div class="final-cta-btns mt16">
-      <a href="https://buy.stripe.com/7sY4gAdaQ4gr2Mi4sC6oo0n" class="btn btn-outline" style="color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.2)">Already Have a Business? Enhancement Build →</a>
+      <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators" class="btn btn-outline" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.3)">Join the Community — $37/mo</a>
+      <a href="https://www.reclaimedvitality.ca/checkout/sister-wealth-creators-business-build" class="btn btn-gold">Build My Business — $997</a>
     </div>
     <p class="disclaimer">Sister Wealth Creators provides business-building guidance, systems, and tools. We do not guarantee income or business results. Individual success depends on many factors including effort, market conditions, and personal circumstances.</p>
   </div>
